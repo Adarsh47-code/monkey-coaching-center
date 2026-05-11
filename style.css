@@ -1,0 +1,245 @@
+.main-name {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.sub-heading {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo {
+    border-radius: 120px;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    animation: bounce 0.4s ease-in 4;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 2px solid rgb(86, 85, 85);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 110px;
+    z-index: 1000;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.book-a-demo {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 197, 0);
+    border-radius: 17px;
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 33px;
+    font-weight: 500;
+}
+
+.book-a-demo:hover {
+    background-color: rgb(0, 60, 0);
+    transition: 0.4s all ease-in-out;
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.hook {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.our-students {
+    /*This is the main container where all the image divs are: */
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+}
+
+.os {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 48px;
+    padding: 18px;
+    font-style: italic;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
+.os1 h4,
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.os2 h4,
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.os3 h4,
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.os4 h4,
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    width: 250px;
+    margin: 10px;
+    border-radius: 15px;
+    flex: 0 0 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    text-align: center;
+    scroll-snap-align: start;
+    padding: 25px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    will-change: transform;
+    transform: translateZ(0) scale(1.0); 
+    backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.01) translateZ(0);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    width: 100%;
+    height: auto;
+}
+
+.offer {
+    margin-top: 58px;
+}
+
+.offer h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    margin-top: 23px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+.offer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.offer li {
+    background: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: 0.4s ease-in;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.offer li:hover {
+    border-color: #25D366;
+    transform: translateY(-4px);
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1000px) {
+    .our-students {
+        justify-content: center;
+        overflow-x: hidden;
+    }
+}
+
+@media(max-width: 480px){
+    .main-name{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .sub-heading{
+        font-size: 1.1rem;
+        text-align: center;
+
+    }
+    .logo{
+        display: none;
+    }
+    .hook{
+        font-size: 1.3rem;
+    }
+
+}
+@media(max-width: 356px){
+    .book-a-demo{
+        padding: 16px 32px;
+        line-height: 1.4;
+    }
+    .hook{
+        font-size: 1.1rem;
+    }
+    .sub-heading{
+        font-size: 0.7rem;
+    }
+}
